@@ -1,0 +1,217 @@
+/* :root {
+  --color-primary: #2a6f49;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-compliment: #032aff;
+  --color-primary-darker: #153725;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #cfe2ce, #a1be9f);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+} */
+
+/*============= HEADER ====================*/
+
+/*============= PERSONAL STATEMENT======== */
+.work {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whLeft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.whlTitle {
+  font-size: 4rem;
+  color: var(--color-primary-darker);
+}
+
+.wlBody {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5em 0 5em;
+  flex-direction: column;
+}
+.wTitle {
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--color-primary-2);
+}
+
+.workRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-opacity);
+  color: var(--color-primary-opacity);
+
+  box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
+    /* 5px 5px 10px 0px rgba(255, 255, 255, 0.9), */ -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
+    5px -5px 10px 0px rgba(174, 174, 174, 0.2);
+}
+.wpList {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-primary-opacity);
+}
+
+.whSlider {
+  background-image: url(/img/DSC_1764.jpg);
+}
+.wsSlider {
+  background-image: url(/img/DSC_1743.jpg);
+}
+.wpSlider {
+  background-image: url(/img//DSC_8686.jpg);
+}
+/* work section */
+.pfSkills {
+  height: 100vh;
+  /* background-color: var(--color-tertiary-opacity); */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.pfsLeft {
+  background-color: var(--color-primary-2);
+}
+.pfslSide {
+  height: 100vh;
+  width: 19.1%;
+  /* background-color: #ffb003; */
+}
+.pfslMain {
+  height: 100vh;
+  width: 81.9%;
+  /* background-color: #153725; */
+}
+.pfslMain h1 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 0.5em;
+}
+
+.pfsrMain {
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  /* background-color: #032aff; */
+}
+
+.wsCard {
+  width: 16rem;
+  height: 22rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
+    5px 5px 10px 0px rgba(255, 255, 255, 0.9),
+    -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
+    5px -5px 10px 0px rgba(174, 174, 174, 0.2);
+}
+.wscSide {
+  width: 20%;
+  color: #fd424b;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 2rem;
+  /* line-height: 1; */
+  font-weight: 550;
+  padding: 0.1rem;
+  font-variation-settings: 'wdth' 35, 'YTFI' 788;
+  background-color: #fff;
+}
+.wscMain {
+  background-color: whitesmoke;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+/* =========PROCESS SECTION==============  */
+
+/* ===============Projects ============== */
+/* .pmMain {
+  /* background-color: var(--color-tertiary); *
+} */
+.pmmCard {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-primary-2);
+}
+.wpCard {
+  width: 15rem;
+  height: 29rem;
+  /* background-color: #fd424b; */
+  overflow: hidden;
+  /* cursor: pointer; */
+  position: relative;
+
+  display: flex;
+  box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
+    5px 5px 10px 0px rgba(255, 255, 255, 0.9),
+    -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
+    5px -5px 10px 0px rgba(174, 174, 174, 0.2);
+}
+.wpCard .wscSide {
+  color: var(--color-primary-darker);
+}
+.wpcMain {
+  /* background-color: rgb(92, 27, 27); */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.wpcImg {
+  height: 65%;
+  /* background-color: var(--color-primary-3); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.E4I {
+  background-image: url(/img/DSC_1764.jpg);
+}
+.MPP {
+  background-image: url(/img/DSC_8684.jpg);
+}
+.FFA {
+  background-image: url(/img/IMG-20230324-WA0005.jpg);
+}
+.SPI {
+  background-image: url(/img/IMG-20230324-WA0003.jpg);
+}
+.wpcDesc {
+  background-color: whitesmoke;
+  height: 35%;
+  padding: 0.4rem 0 0 0.5rem;
+}
+.wpcRole {
+  height: 20%;
+  /* background-color: #fff; */
+}
+
+.wpcList {
+  height: 80%;
+  font-size: 0.8rem;
+  list-style: circle;
+}
