@@ -238,8 +238,12 @@
     width: 100%;
     align-items: start;
   }
+  .wTitle {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: var(--color-primary-2);
+  }
   .pfsrMain {
-    /* align-items: center; */
     flex-direction: row;
     flex-wrap: wrap;
     /* padding: 0.1rem; */
@@ -250,14 +254,6 @@
   .wsCard {
     width: 17rem;
     height: 18rem;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
-      5px 5px 10px 0px rgba(255, 255, 255, 0.9),
-      -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
-      5px -5px 10px 0px rgba(174, 174, 174, 0.2);
   }
   .wSkills {
     background-color: #fd424b;
@@ -269,22 +265,14 @@
     color: var(--color-primary-darker);
   }
   .whLeft {
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
   }
   .wlBody {
     width: 100%;
-    /* background-color: #fd424b; */
     font-size: 1.1rem;
     align-items: start;
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
     padding: 0 1em 0 1rem;
-    /* flex-direction: column; */
   }
   .whSide {
     width: auto;
@@ -294,8 +282,7 @@
     font-size: 1.8rem;
   }
 
-
-  .pmMain{
+  .pmMain {
     /* background-color: #fd424b; */
     width: 100%;
   }
@@ -304,17 +291,20 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items:center ;
+    align-items: center;
     /* justify-items: center; */
     justify-content: space-between;
     padding: 4rem;
-      /* background-color: blue; */
-      width: 100%;     
-      color: var(--color-primary-2);
-      /* flex-direction: row; */
-      flex-wrap: wrap;
-    }
-    justify-content: space-between;
+    /* background-color: blue; */
+    width: 100%;
     color: var(--color-primary-2);
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 430px) {
+  .wlBody {
+    background-color: #fd424b;
+    font-size: small;
   }
 }
