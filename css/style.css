@@ -141,7 +141,12 @@ ul li {
 p {
   color: #666;
 }
-
+.btn {
+  /* background-color: #032aff; */
+  font-size: larger;
+  border: 2px solid var(--color-secondary-darker);
+  color: #cfe2ce;
+}
 /* HERO SECTION */
 .heroSection {
   display: flex;
@@ -318,6 +323,11 @@ p {
   }
   .heroName {
     font-size: 1.8rem;
+  }
+  .heroLeft .heroName {
+    font-size: 2.3rem;
+    color: #fafcfa;
+    font-weight: 100;
   }
   .heroSection {
     display: flex;
