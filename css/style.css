@@ -197,7 +197,7 @@ p {
   display: flex;
   /* background-color: var(--color-primary); */
   width: 55%;
-  background-image: url(img/img_3680_1.jpg);
+  background-image: url(/img/img_3680_1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
