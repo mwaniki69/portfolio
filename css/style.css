@@ -254,10 +254,7 @@ p {
   overflow: hidden;
 }
 .highlight {
-  /* background-color: var(--color-tertiary-darker); */
   font-size: 1.5rem;
-  /* transform: skewX(20deg); */
-  /* transform: skew(15deg, 15deg); */
 }
 .Red {
   background-color: var(--color-tertiary-darker);
@@ -318,6 +315,9 @@ p {
   }
   .heroMain {
     width: 100%;
+  }
+  .heroName {
+    font-size: 1.8rem;
   }
   .heroSection {
     display: flex;
@@ -382,6 +382,7 @@ p {
     width: 100%;
     /* background-color: #032aff; */
     display: flex;
+    font-size: small;
 
     overflow: visible;
   }
@@ -424,5 +425,8 @@ p {
   .heroLeft {
     height: 80%;
     /* background-color: #032aff; */
+  }
+  .highlight {
+    font-size: 1.2rem;
   }
 }
