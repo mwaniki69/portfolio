@@ -382,6 +382,9 @@ p {
     width: 100%;
     /* background-color: #032aff; */
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
     font-size: small;
 
     overflow: visible;
