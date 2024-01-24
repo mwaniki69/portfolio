@@ -215,3 +215,38 @@
   font-size: 0.8rem;
   list-style: circle;
 }
+/* ============MEDIA QUERIES================ */
+/* ========================================= */
+@media (max-width: 768px) {
+  .whlTitle {
+    /* background-color: #fd424b; */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--color-primary-darker);
+  }
+  .whLeft {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  .wlBody {
+    width: 100%;
+    /* background-color: #fd424b; */
+    font-size: 1.1rem;
+    align-items: start;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 0 1em 0 1rem;
+    /* flex-direction: column; */
+  }
+  .whSide {
+    width: auto;
+    /* background-color: aqua; */
+  }
+  .wpList {
+    font-size: 1.8rem;
+  }
+}

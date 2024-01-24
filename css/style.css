@@ -293,11 +293,14 @@ p {
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
+  .heroMain {
+    width: 100%;
+  }
   .heroSection {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100vh;
     /* padding: 5em; */
     /* background-color: var(--color-tertiary); */
@@ -324,8 +327,9 @@ p {
     /* justify-content: flex-end; */
   }
   .heroRight {
-    /* background-color: #2a6f49; */
+    background-color: #2a6f49;
     width: 100%;
+    /* height: 20%; */
   }
 
   .heroNavlist {
@@ -339,12 +343,44 @@ p {
   .mpList {
     display: flex;
     flex-direction: row;
-    text-decoration: none;
+    color: #cfe2ce;
+    /* text-decoration: none; */
+    font-weight: 100;
+    /* text-decoration-line: underline; */
+    text-decoration-color: #cfe2ce;
   }
   .mpList li {
     margin: 0.1rem;
     padding: 0.1rem;
-    background-color: var(--color-primary-2);
+    /* background-color: var(--color-primary-2); */
+  }
+  .abtCont {
+    width: 100%;
+    /* background-color: #032aff; */
+    display: flex;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* padding: 2.5rem; */
+    /* flex-direction: column; */
+    overflow: visible;
+  }
+  .smMain {
+    width: 100%;
+  }
+  .smSide {
+    height: 100vh;
+    width: auto;
+    /* background-color: #032aff; */
+  }
+  .sectionDesc {
+    font-size: small;
+    color: #1a1b1a;
+    margin: 0;
+    text-align: start;
+  }
+  .socials {
+    /* background-color: #1a1b1a; */
+    font-size: 1rem;
   }
 }
 
