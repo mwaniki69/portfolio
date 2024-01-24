@@ -367,6 +367,7 @@ p {
     display: flex;
     flex-direction: row;
     color: #cfe2ce;
+    font-size: medium;
     /* text-decoration: none; */
     font-weight: 100;
     /* text-decoration-line: underline; */
@@ -381,10 +382,7 @@ p {
     width: 100%;
     /* background-color: #032aff; */
     display: flex;
-    /* align-items: flex-start; */
-    /* justify-content: center; */
-    /* padding: 2.5rem; */
-    /* flex-direction: column; */
+
     overflow: visible;
   }
   .smMain {
