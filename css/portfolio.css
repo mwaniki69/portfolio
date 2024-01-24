@@ -239,10 +239,12 @@
     align-items: start;
   }
   .pfsrMain {
-    align-items: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
     /* padding: 0.1rem; */
     justify-content: space-around;
-    /* background-color: blue; */
+    background-color: blue;
     /* background-color: #032aff; */
   }
   .wsCard {
@@ -257,9 +259,9 @@
       -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
       5px -5px 10px 0px rgba(174, 174, 174, 0.2);
   }
-  /* .wSkills {
+  .wSkills {
     background-color: #fd424b;
-  } */
+  }
   .whlTitle {
     /* background-color: #fd424b; */
     margin-bottom: 2rem;
@@ -290,5 +292,29 @@
   }
   .wpList {
     font-size: 1.8rem;
+  }
+
+
+  .pmMain{
+    /* background-color: #fd424b; */
+    width: 100%;
+  }
+  .pmmCard {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    /* justify-items: center; */
+    justify-content: space-between;
+    padding: 4rem;
+      /* background-color: blue; */
+      width: 100%;     
+      color: var(--color-primary-2);
+      /* flex-direction: row; */
+      flex-wrap: wrap;
+    }
+    justify-content: space-between;
+    color: var(--color-primary-2);
   }
 }
