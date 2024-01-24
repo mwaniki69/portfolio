@@ -66,13 +66,13 @@
 }
 
 .whSlider {
-  background-image: url(img/DSC_1764.jpg);
+  background-image: url(/img/DSC_1764.jpg);
 }
 .wsSlider {
-  background-image: url(img/DSC_1743.jpg);
+  background-image: url(/img/DSC_1743.jpg);
 }
 .wpSlider {
-  background-image: url(img//DSC_8686.jpg);
+  background-image: url(/img//DSC_8686.jpg);
 }
 /* work section */
 .pfSkills {
@@ -218,6 +218,48 @@
 /* ============MEDIA QUERIES================ */
 /* ========================================= */
 @media (max-width: 768px) {
+  .wProjects {
+    flex-direction: column;
+  }
+  .wpsSide {
+    width: 100%;
+    align-items: start;
+  }
+  .wProcess {
+    flex-direction: column;
+  }
+  .smProcess {
+    background-color: var(--color-primary-opacity);
+    width: 100%;
+  }
+  .ssProcess {
+    /* background-color: blue; */
+    height: auto;
+    width: 100%;
+    align-items: start;
+  }
+  .pfsrMain {
+    align-items: center;
+    /* padding: 0.1rem; */
+    justify-content: space-around;
+    /* background-color: blue; */
+    /* background-color: #032aff; */
+  }
+  .wsCard {
+    width: 17rem;
+    height: 18rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
+      5px 5px 10px 0px rgba(255, 255, 255, 0.9),
+      -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
+      5px -5px 10px 0px rgba(174, 174, 174, 0.2);
+  }
+  /* .wSkills {
+    background-color: #fd424b;
+  } */
   .whlTitle {
     /* background-color: #fd424b; */
     margin-bottom: 2rem;

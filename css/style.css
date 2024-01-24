@@ -293,6 +293,29 @@ p {
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
+  .sectionSide {
+    display: flex;
+    /* width: 100%; */
+    /* height: 40vh; */
+  }
+  .slider {
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(img/DSC_1764.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .ssMain {
+    /* width: 100%; */
+    /* background-color: #032aff; */
+    height: auto;
+  }
+  .ssSide {
+    background-color: #2a6f49;
+    display: none;
+  }
   .heroMain {
     width: 100%;
   }
@@ -327,7 +350,7 @@ p {
     /* justify-content: flex-end; */
   }
   .heroRight {
-    background-color: #2a6f49;
+    /* background-color: #2a6f49; */
     width: 100%;
     /* height: 20%; */
   }
@@ -366,6 +389,7 @@ p {
   }
   .smMain {
     width: 100%;
+    flex-direction: column;
   }
   .smSide {
     height: 100vh;
