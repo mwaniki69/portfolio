@@ -131,7 +131,7 @@
   font-size: 2rem;
   /* line-height: 1; */
   font-weight: 550;
-  padding: 0.1rem;
+  /* padding: 0.1rem; */
   font-variation-settings: 'wdth' 35, 'YTFI' 788;
   background-color: #fff;
 }
@@ -144,77 +144,201 @@
 /* =========PROCESS SECTION==============  */
 
 /* ===============Projects ============== */
-/* .pmMain {
-  /* background-color: var(--color-tertiary); *
-} */
-.pmmCard {
-  /* background-color: blue; */
-  width: 100%;
-  display: flex;
+/* ====================================== */
+.wProjects {
+  height: 150vh;
+}
+.wpmMain {
+  height: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wpsSide {
+  height: 100%;
+}
+.wpsMain {
+  height: 90%;
+}
+.wpcSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   color: var(--color-primary-2);
 }
 .wpCard {
-  width: 15rem;
-  height: 29rem;
-  /* background-color: #fd424b; */
+  width: 45%;
+  height: 13.75rem;
   overflow: hidden;
-  /* cursor: pointer; */
   position: relative;
-
   display: flex;
+  color: #444;
   box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
     5px 5px 10px 0px rgba(255, 255, 255, 0.9),
     -5px 5px 10px 0px rgba(174, 174, 174, 0.2),
     5px -5px 10px 0px rgba(174, 174, 174, 0.2);
 }
-.wpCard .wscSide {
-  color: var(--color-primary-darker);
+.cardSide {
+  background-color: #fafcfa;
+  display: flex;
+  flex-direction: row;
+  /* padding-left: 2rem; */
+  width: 45%;
 }
-.wpcMain {
-  /* background-color: rgb(92, 27, 27); */
-  width: 80%;
+.csSide {
+  width: 10%;
+  background-color: #fff;
+}
+.csMain {
+  /* background-color: #444; */
+  width: 100%;
+  color: #444;
+}
+.wpcTitle {
+  font-size: 2rem;
+  /* color: var(--color-primary); */
+  background-color: #fff;
+  width: 100%;
+  height: 20%;
+}
+.wpcRole {
+  height: 65%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: start;
+  justify-content: center;
+  padding-left: 1.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 300;
 }
-.wpcImg {
-  height: 65%;
-  /* background-color: var(--color-primary-3); */
-
+.wpcRolelist {
+  padding-left: 1rem;
+}
+/* =========== */
+.cardMain {
+  width: 55%;
+  display: flex;
+  align-items: flex-end;
+}
+.cmInd {
+  background-color: #fff;
+  width: 100%;
+  height: 12%;
+  text-align: center;
+}
+/* ========== */
+/* -----EACH  CARD ----- */
+/* -----E4I------------- */
+.csE4i {
+  background-color: var(--color-primary-2);
+}
+.e4Bg {
+  background-image: url(/img/DSC_8684.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
-}
-.E4I {
-  background-image: url(/img/DSC_1764.jpg);
-}
-.MPP {
-  background-image: url(/img/DSC_8684.jpg);
-}
-.FFA {
-  background-image: url(/img/IMG-20230324-WA0005.jpg);
-}
-.SPI {
-  background-image: url(/img/IMG-20230324-WA0003.jpg);
-}
-.wpcDesc {
-  background-color: whitesmoke;
-  height: 35%;
-  padding: 0.4rem 0 0 0.5rem;
-}
-.wpcRole {
-  height: 20%;
-  /* background-color: #fff; */
 }
 
-.wpcList {
-  height: 80%;
-  font-size: 0.8rem;
-  list-style: circle;
+.e4Title {
+  color: var(--color-primary);
 }
+
+.e4Ind {
+  background-color: var(--color-primary-2);
+
+  color: #fafcfa;
+}
+/* ------ FFA -------- */
+.csFfa {
+  background-color: #444;
+}
+.ffaTitle {
+  color: var(--color-secondary-darker);
+}
+.ffaInd {
+  background-color: #444;
+  color: var(--color-secondary-darker);
+}
+.ffaBg {
+  background-image: url(/img//DSC_8686.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* -------MPP-------- */
+.csMpp {
+  background-color: var(--color-primary-3);
+}
+.mppTitle {
+  color: var(--color-primary-3);
+}
+.mppInd {
+  background-color: var(--color-primary-3);
+  color: #fafcfa;
+}
+.mppBg {
+  background-image: url(/img/DSC_1764.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ------- DDI---------- */
+.csDdi {
+  background-color: var(--color-secondary-darker);
+}
+.ddiTitle {
+  color: var(--color-secondary);
+}
+.ddiInd {
+  background-color: var(--color-secondary-darker);
+  color: #fafcfa;
+}
+.ddiBg {
+  background-image: url(/img/DSC_1764.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ------- spc---------- */
+.csSpc {
+  background-color: var(--color-primary-4);
+}
+.spcTitle {
+  color: var(--color-primary-4);
+}
+.spcInd {
+  background-color: var(--color-primary-4);
+  color: #fafcfa;
+}
+.spcBg {
+  background-image: url(/img/DSC_1764.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ------- dad---------- */
+.csDad {
+  background-color: var(--color-tertiary-darker);
+}
+.dadTitle {
+  color: var(--color-tertiary);
+}
+.dadInd {
+  background-color: var(--color-tertiary-darker);
+  color: #fafcfa;
+}
+.dadBg {
+  background-image: url(/img/DSC_1764.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* ============MEDIA QUERIES================ */
 /* ========================================= */
 @media (max-width: 768px) {
@@ -280,24 +404,29 @@
     font-size: 1.8rem;
   }
 
-  .pmMain {
+  .wpmMain {
     /* background-color: #fd424b; */
     width: 100%;
   }
-  .pmmCard {
+  .wpcSection {
     /* background-color: blue; */
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     align-items: center;
     /* justify-items: center; */
     justify-content: space-between;
-    padding: 4rem;
+    /* padding: 4rem; */
     /* background-color: blue; */
     width: 100%;
     color: var(--color-primary-2);
     /* flex-direction: row; */
     flex-wrap: wrap;
+  }
+  .wpCard {
+    width: 80%;
+    height: 12rem;
   }
 }
 @media (max-width: 430px) {
