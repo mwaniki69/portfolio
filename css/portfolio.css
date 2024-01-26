@@ -404,6 +404,10 @@
   .wpcTitle {
     font-size: larger;
   }
+  .cmInd {
+    text-align: left;
+    font-size: 0.75rem;
+  }
   /* ----------- */
 
   .whlTitle {
