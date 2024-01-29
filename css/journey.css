@@ -210,7 +210,7 @@ body {
     -0.3rem -0.3rem 0.6rem rgba(177, 177, 177, 0.200000003),
     0.3rem 0.3rem 0.6rem rgba(177, 177, 177, 0.200000003);
   background: linear-gradient(135deg, #fefefe 0%, #e6e6e6 100%);
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
   flex-shrink: 0;
 }
 .journey-Ark

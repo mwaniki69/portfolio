@@ -104,8 +104,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
-  background: linear-gradient(135deg, #b41515 0%, #e6e6e6 100%);
+  /* border-radius: 15px; */
+  background: linear-gradient(135deg, #eceaea 0%, #e6e6e6 100%);
   box-shadow: -3px 3px 8px 0px rgba(177, 177, 177, 0.9),
     3px -3px 6px 0px rgba(255, 255, 255, 0.9),
     -3px -3px 6px 0px rgba(177, 177, 177, 0.2),
@@ -118,7 +118,7 @@
   padding: 1.02rem 0.866rem 1.02rem 0.866rem;
   width: 100%;
   height: 18.75rem;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   background: #f4f4f4;
   box-shadow: -5px -5px 13px 0px rgba(174, 174, 174, 0.9),
     5px 5px 10px 0px rgba(255, 255, 255, 0.9),
@@ -130,7 +130,7 @@
   width: 15.9681rem;
   height: 100%;
   position: relative;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 .galleryImgOne {
   width: 3.1909rem;
@@ -140,7 +140,7 @@
   top: 6.3004rem;
   object-fit: cover;
   vertical-align: top;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 .galleryImgTwo {
   width: 4.7863rem;
@@ -180,5 +180,5 @@
   top: 0;
   object-fit: cover;
   vertical-align: top;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }

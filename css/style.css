@@ -17,6 +17,16 @@
   --color-tertiary-opacity: #ff58602d;
   --gradient-primary: linear-gradient(to top left, #cfe2ce, #a1be9f);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  /* ----------------------- */
+  --shine-degree: 120deg;
+  --shine-color: rgba(255, 255, 255, 0.2);
+  --shine-effect: linear-gradient(
+    var(--shine-degree),
+    transparent,
+    var(--shine-color),
+    transparent
+  );
+  --shine-transition: all #{$anim-speed}s ease-in-out;
 }
 
 * {
@@ -163,10 +173,14 @@ p {
   font-size: 2.5rem;
   font-family: 'Circular', sans-serif;
   color: #fafcfa;
+  animation: drop-in 1200ms ease 500ms backwards;
+  /* animation: zoomIn 1200ms; */
 }
 
 #fName {
   color: #fafcfa;
+  animation: zoomIn 1200ms;
+  /* background-color: #001fa6; */
   /* font-family: 'Poppins SemiBold', sans-serif; */
 }
 .heroRight {
@@ -174,27 +188,90 @@ p {
   align-items: center;
   overflow: hidden;
 }
+/* .hnOne {
+  animation: drop-in 1s ease 200ms backwards;
+}
+.hnTwo {
+  animation: drop-in 1200ms ease 500ms backwards;
+} */
+/* .heroText {
+  {
+    border-color: orange;
+  }
+} */
+
 .mpList {
+  color: #808080;
+  text-decoration-line: underline;
+  text-decoration-color: #ffe499;
+  cursor: pointer;
+}
+.mpList li {
+  animation: dissolveInRight 1s ease 200ms;
+}
+.mpList li :hover {
+  color: #444;
+  font-size: 90%;
+  transition: all 0.2s ease-in-out;
   text-decoration-line: underline;
   text-decoration-color: var(--color-secondary-darker);
 }
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+@keyframes dissolveInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*---
+  active state
+---*/
+
+.mpList li:active:after {
+  opacity: 0;
+}
+
 /* ================SLIDERS============================ */
 /* =================================================== */
-/* .hmPage {
-  background-image: url(/img/IMG-20230324-WA0003.jpg);
-} */
+.hmPage {
+  /* background-image: url(/img/IMG-20230324-WA0003.jpg); */
+  background-color: #001ea667;
+}
 
 /*=================ABOUT SECTION =======================*/
 /* =================================================== */
 
 .abtLeft {
   background-color: var(--color-primary);
+  animation: zoomIn 1200ms;
 }
 .abtLeft h1 {
   writing-mode: vertical-rl;
   text-orientation: sideways;
   transform: rotate(180deg);
 }
+
 .socials {
   list-style: none;
   font-size: 1.5rem;
@@ -223,6 +300,7 @@ p {
   margin: 1em;
   text-align: start;
   /* display: none; */
+  animation: zoomIn 1200ms;
 }
 .abtdescOne {
   font-size: 2rem;
@@ -312,6 +390,9 @@ p {
     justify-items: space-between;
     flex-direction: column;
   }
+  /* .heroText {
+    display: none;
+  } */
   .heroRight {
     width: 100%;
     height: 20%;
@@ -367,7 +448,6 @@ p {
 }
 
 @media (max-width: 430px) {
-  /* Adjust styles for smaller screens */
   .section {
     height: 100vh;
     width: 100vw;
