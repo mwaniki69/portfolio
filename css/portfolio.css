@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: width 0.4s ease-in-out;
 }
 .whlTitle {
   font-size: 4rem;
@@ -62,6 +63,51 @@
   text-decoration-line: underline;
   text-decoration-color: var(--color-primary-opacity);
 }
+.wpList li {
+  animation: dissolveInRight 1s ease 200ms;
+}
+.wpList li :hover {
+  color: var(--color-primary-darker);
+  font-size: 105%;
+  transition: all 0.2s ease-in-out;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-secondary);
+}
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+@keyframes dissolveInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ------scrolling ----- */
+.trials32 {
+  transition: width 0.6s ease-in-out;
+  width: 100vw;
+}
+
+/* ================ */
 
 .whSlider {
   background-image: url(/img/mppsld.jpg);
