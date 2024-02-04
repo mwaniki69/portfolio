@@ -38,10 +38,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 5em 0 5em;
-  flex-direction: column;
+  text-align: center;
+  padding: 0 5em 0 2em;
 }
 .wTitle {
   font-size: 2em;
@@ -217,6 +215,13 @@
   list-style-position: inside;
 }
 /* =========PROCESS SECTION==============  */
+/* ====================================== */
+
+.smProcess img {
+  object-fit: contain;
+
+  width: 80%;
+}
 
 /* ===============Projects ============== */
 /* ====================================== */
@@ -253,7 +258,7 @@
   position: relative;
   display: flex;
   color: #444;
-  box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d0d0d0;
 }
 .cardSide {
   background-color: #fafcfa;
@@ -272,7 +277,7 @@
   color: #444;
 }
 .wpcTitle {
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #fff;
   width: 100%;
   height: 20%;
@@ -301,6 +306,9 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   /* background-color: #444; */
 }
 .cmInd {
@@ -357,9 +365,6 @@
 }
 .e4Bg {
   background-image: url(/img/e4i.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .e4Title {
@@ -377,6 +382,14 @@
 .e4imodalBtn:hover {
   background-color: var(--color-primary);
 }
+/* --modal-- */
+.e4iMh {
+  background-color: var(--color-primary);
+  color: var(--color-primary-5);
+}
+.e4iSH {
+  text-decoration-color: var(--color-primary);
+}
 /* ------ FFA -------- */
 .csFfa {
   background-color: #444;
@@ -390,9 +403,6 @@
 }
 .ffaBg {
   background-image: url(/img/ffabg.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .ffaModal:hover {
   background-color: #00000034;
@@ -404,6 +414,14 @@
 .ffamodalBtn:hover {
   background-color: var(--color-secondary-darker);
   color: #444;
+}
+/* -modals */
+.ffaMh {
+  background-color: #444;
+  color: var(--color-secondary-darker);
+}
+.ffaSH {
+  text-decoration-color: var(--color-secondary-darker);
 }
 /* -------MPP-------- */
 .csMpp {
@@ -418,9 +436,6 @@
 }
 .mppBg {
   background-image: url(/img/mppbg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .mppModal:hover {
   background-color: var(--color-primary-3-opacity);
@@ -430,6 +445,14 @@
 }
 .mppmodalBtn:hover {
   background-color: var(--color-primary-3);
+}
+/* --modal-- */
+.mppMh {
+  background-color: var(--color-primary-3);
+  color: var(--color-primary-5);
+}
+.mppSH {
+  text-decoration-color: var(--color-primary-3);
 }
 /* ------- DDI---------- */
 .csDdi {
@@ -444,9 +467,6 @@
 }
 .ddiBg {
   background-image: url(/img//ddi.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .ddiModal:hover {
   background-color: var(--color-secondary-opacity);
@@ -457,6 +477,14 @@
 .ddimodalBtn:hover {
   background-color: var(--color-secondary);
   /* color: var(--color-primary-5); */
+}
+/* --modal */
+.ddiMh {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-5);
+}
+.ddiSH {
+  text-decoration-color: var(--color-secondary);
 }
 /* ------- spc---------- */
 .csSpc {
@@ -471,18 +499,21 @@
 }
 .spcBg {
   background-image: url(/img/spc.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .spcModal:hover {
   background-color: var(--color-primary-4-opacity);
 }
-.spcmodalBtn {
-  /* background-color: var(--color-primary-4-opacity); */
-}
+
 .spcmodalBtn:hover {
   background-color: var(--color-primary-4);
+}
+/* --modal */
+.spcMh {
+  background-color: var(--color-primary-4);
+  color: var(--color-primary-5);
+}
+.spcSH {
+  text-decoration-color: var(--color-primary-4);
 }
 /* ------- dad---------- */
 .csDad {
@@ -497,15 +528,23 @@
 }
 .dadBg {
   background-image: url(/img/niad.jpg);
-  background-size: cover;
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .dadModal:hover {
   background-color: var(--color-tertiary-darker-opacity);
 }
 .dadmodalBtn:hover {
   background-color: var(--color-tertiary-darker);
+}
+/* --modal */
+.dadMh {
+  background-color: var(--color-tertiary-darker);
+  color: var(--color-primary-5);
+}
+.dadSH {
+  text-decoration-color: var(--color-tertiary-darker);
 }
 /* ==========MODALS========== */
 /* ========================== */
@@ -589,29 +628,13 @@
 
 /* +=====each modal==== */
 /* -----FFA----- */
+
 /* -----MPP----- */
-.mppMh {
-  background-color: var(--color-primary-3);
-  color: var(--color-primary-5);
-}
-.mppSH {
-  text-decoration-color: var(--color-primary-3);
-}
-/* .modalDesc {
-  width: 100%;
-  background-color: #bfbfbf;
-  padding: 2rem;
-}
-.modalChllng {
-  width: 100%;
-  background-color: #e28787;
-  padding: 2rem;
-}
-.modalCntrb {
-  width: 100%;
-  background-color: #abe287;
-  padding: 2rem;
-}*/
+
+/* ----DDI */
+
+/* ---space--- */
+
 .modalOutcome {
   /* width: 100%; */
   /* background-color: #e287c7; */
@@ -642,6 +665,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
+}
+
+.footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #444;
 }
 /* ============MEDIA QUERIES================ */
 /* ========================================= */

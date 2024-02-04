@@ -420,6 +420,7 @@ p {
   .slider {
     height: 50vh;
     overflow: hidden;
+
     /* background-image: url(/img/mppr.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
