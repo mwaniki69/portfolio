@@ -1,24 +1,25 @@
 const stickyNav = document.getElementById('navScroll');
-// const mplistnav = document.getElementById('triall');
-const mplist = document.getElementById('trials2');
-// const wplistTop = document.getElementById('top');
-// const mplistabt = document.getElementById('abtme');
+const stickyNav2 = document.getElementById('workRight');
+const mplist = document.getElementById('whLeft');
+const homeIcon = document.getElementById('homes');
+const upIcon = document.getElementById('up');
 
 const initialHeight = stickyNav.offsetHeight;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > initialHeight) {
-    stickyNav.classList.add('navShrink');
+    stickyNav2.classList.add('navShrink');
+    stickyNav.classList.add('navscrolinks');
     mplist.classList.add('trials32');
-    // wplistTop.style.display = 'inline';
-    // mplistnav.style.width = '0vw';
-    // mplistabt.style.display = 'none';
+    homeIcon.style.visibility = 'visible';
+    upIcon.style.visibility = 'visible';
   } else {
-    stickyNav.classList.remove('navShrink');
+    stickyNav2.classList.remove('navShrink');
     mplist.classList.remove('trials32');
-    // mplistabt.style.display = 'inline';
-    wplistTop.style.display = 'none';
-    // mplistnav.style.width = '45vw'; // Add class for animation
+    stickyNav.classList.remove('navscrolinks');
+
+    upIcon.style.visibility = 'hidden';
+    homeIcon.style.visibility = 'hidden';
   }
 });
 // ===================
@@ -112,3 +113,58 @@ function openModal(event) {
 // Add click event listener to all links with a specific class (e.g., "modal-link")
 const modalLinks = document.querySelectorAll('.modal-link');
 modalLinks.forEach(link => link.addEventListener('click', openModal));
+
+// ====================================
+// const filterContainer = document.querySelector('.gallery-filter'),
+//   galleryItems = document.querySelectorAll('.gallery-item');
+
+// filterContainer.addEventListener('click', event => {
+//   if (event.target.classList.contains('filter-item')) {
+//     // deactivate existing active 'filter-item'
+//     filterContainer.querySelector('.activ').classList.remove('activ');
+//     // activate new 'filter-item'
+//     event.target.classList.add('activ');
+//     const filterValue = event.target.getAttribute('data-filter');
+//     galleryItems.forEach(item => {
+//       if (item.classList.contains(filterValue) || filterValue === 'All') {
+//         item.classList.remove('hide');
+//         item.classList.add('show');
+//       } else {
+//         item.classList.remove('show');
+//         item.classList.add('hide');
+//       }
+//     });
+//   }
+// });
+const filterContainer = document.querySelector('.gallery-filter'),
+  galleryItems = document.querySelectorAll('.gallery-item');
+
+// Initial filter on page load
+window.addEventListener('load', () => {
+  const initialFilter = filterContainer.querySelector(
+    '.filter-item:first-child'
+  ); // Assuming first item is default
+  if (initialFilter) {
+    initialFilter.click(); // Simulate a click to trigger filtering
+  }
+});
+
+// Click event listener for manual filtering
+filterContainer.addEventListener('click', event => {
+  if (event.target.classList.contains('filter-item')) {
+    // Deactivate existing active 'filter-item'
+    filterContainer.querySelector('.activ').classList.remove('activ');
+    // Activate new 'filter-item'
+    event.target.classList.add('activ');
+    const filterValue = event.target.getAttribute('data-filter');
+    galleryItems.forEach(item => {
+      if (item.classList.contains(filterValue) || filterValue === 'all') {
+        item.classList.remove('hide');
+        item.classList.add('show');
+      } else {
+        item.classList.remove('show');
+        item.classList.add('hide');
+      }
+    });
+  }
+});

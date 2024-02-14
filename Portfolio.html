@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
     <title>Moses Mwaniki:Portfolio</title>
@@ -18,8 +22,16 @@
     <div class="header"></div>
     <!-- ===========HERO SECTION=================== -->
     <div class="section work" id="work">
-      <div class="ssSide whSide"></div>
-      <div class="heroMain whLeft" id="trials2">
+      <div class="smSide whSide">
+        <!-- <span class="material-symbols-outlined heroHome">
+          <a href="index.html"> home</a></span
+        > -->
+      </div>
+
+      <div class="heroMain whLeft" id="whLeft">
+        <span class="material-symbols-outlined heroHome">
+          <a href="index.html"> home</a></span
+        >
         <div class="whlTitle"><h1>Portfolio</h1></div>
         <p class="wTitle">
           Hello I'm <a href="index.html">Moses Mwaniki</a>...
@@ -43,15 +55,23 @@
           </p>
         </div>
       </div>
-      <!--  -->
-      <div class="heroSide workRight" id="triall">
+      <!--======================================  -->
+      <div class="heroSide workRight" id="workRight">
+        <span class="material-symbols-outlined homes" id="homes">
+          <a href="index.html"> home</a></span
+        >
+        <!-- <span class="material-symbols-outlined homes" id="homes"> home</span> -->
+
         <ul class="heroNavlist wpList" id="navScroll">
-          <li><a class="active" href="#work"></a></li>
+          <li class="active"><a href="#work"></a></li>
           <li><a href="#skills">Skills </a></li>
           <li><a href="#process">My Process</a></li>
           <li><a href="#projects">My Projects</a></li>
           <!-- <li><a id="top" href="#">Top </a></li> -->
         </ul>
+        <span class="material-symbols-outlined up" id="up"
+          ><a href="#">North </a></span
+        >
       </div>
     </div>
     <div class="slider whSlider">
@@ -63,15 +83,28 @@
       <div class="sectionSide pfsLeft">
         <div class="ssSide pfslSide"></div>
         <div class="ssMain pfslMain">
-          <h1>Skills</h1>
+          <div class="skillHeader">
+            <h1>Skills</h1>
+          </div>
+
+          <div class="gallery-filter skillFilter">
+            <!-- <span class="filter-item" data-filter="all">All</span> -->
+            <span class="filter-item activ" data-filter="hcd"
+              >Design Thinking | HCD</span
+            >
+            <span class="filter-item" data-filter="dResearch"
+              >Design Research</span
+            >
+            <span class="filter-item" data-filter="data">Data</span>
+          </div>
         </div>
       </div>
 
       <div class="sectionMain pfsRight">
         <div class="smMain pfsrMain">
           <!-- cards -->
-          <div class="wsCard">
-            <section class="wscSide">Research</section>
+          <div class="wsCard gallery-item hcd">
+            <section class="wscSide">inception</section>
             <section class="wscMain">
               <ul class="wscList">
                 <li>Research</li>
@@ -84,7 +117,7 @@
           </div>
           <!-- end of cards -->
           <!-- cards -->
-          <div class="wsCard two">
+          <div class="wsCard two gallery-item hcd">
             <section class="wscSide">Design Thinking</section>
             <section class="wscMain">
               <ul class="wscList">
@@ -96,7 +129,83 @@
           </div>
           <!-- end of cards -->
           <!-- cards -->
-          <div class="wsCard three">
+          <div class="wsCard three gallery-item hcd">
+            <section class="wscSide">Data</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Market Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard gallery-item dResearch">
+            <section class="wscSide">Desk Research</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Research</li>
+                <li>Branding</li>
+                <li>Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard two gallery-item dResearch">
+            <section class="wscSide">Design Thinking</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Market Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard three gallery-item dResearch">
+            <section class="wscSide">Data</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Market Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard gallery-item data">
+            <section class="wscSide">Design Research</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Research</li>
+                <li>Branding</li>
+                <li>Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard two gallery-item data">
+            <section class="wscSide">Design Thinking</section>
+            <section class="wscMain">
+              <ul class="wscList">
+                <li>Market Research</li>
+                <li>Branding</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cards -->
+          <!-- cards -->
+          <div class="wsCard three gallery-item data">
             <section class="wscSide">Data</section>
             <section class="wscMain">
               <ul class="wscList">
@@ -143,7 +252,15 @@
       <div class="sectionSide wpsSide">
         <div class="ssSide"></div>
         <div class="ssMain wpsMain">
-          <h1>My Projects</h1>
+          <div class="wpsTitle">
+            <h1>My Projects</h1>
+          </div>
+
+          <!-- <ul class="wpsCategories">
+            <li>Design Research</li>
+            <li>Facilitator</li>
+            <li>Service Design</li>
+          </ul> -->
         </div>
       </div>
       <div class="sectionMain wpmMain">
