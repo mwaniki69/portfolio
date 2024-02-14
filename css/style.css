@@ -607,19 +607,20 @@ p {
     width: 100vw;
     /* height: 100v; */
     background: none;
-    align-items: start;
-    justify-content: flex-end;
+    align-items: center;
+    /* justify-content: flex-end; */
     /* justify-items: space-between; */
     flex-direction: column;
   }
   .heroTextchange {
     width: 100%;
-    background-color: #001fa6;
+    /* background-color: #001fa6; */
     /* font-size: 1rem; */
   }
-  /* .heroText {
-    display: none;
-  } */
+  .heroBtn {
+    margin: 0;
+    /* display: none; */
+  }
   .heroRight {
     width: 100%;
     height: 20%;
