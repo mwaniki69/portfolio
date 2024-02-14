@@ -249,17 +249,20 @@
   font-weight: 200;
   text-transform: uppercase;
   /* display: inline-block; */
+  /* background-color: #444; */
   margin: 0 10px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   line-height: 1.2;
   transition: all 0.3s ease;
+  box-shadow: inset 6px 6px 5px #b8b8b8, inset -6px -6px 5px #ffffff;
 }
 .gallery-filter .filter-item.activ {
   /* color: #ff9800; */
-  font-size: 130%;
+  font-size: 110%;
   font-weight: 400;
   border-color: #ff9800;
+  box-shadow: 6px 6px 5px #b8b8b8, -6px -6px 5px #ffffff;
 }
 .gallery-item.show {
   animation: zoomIn 0.8s ease;
